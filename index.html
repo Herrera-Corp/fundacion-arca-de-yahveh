@@ -46,6 +46,21 @@
 			</div>
 		</section>
 
+
+
+		<section id="quienes-somos" class="section fade-in-section">
+			<div class="bienvenida-box">
+			    <div class="bienvenida-content">
+			        <div class="bienvenida-texto">
+			            <h2>Quiénes Somos</h2>
+			            <p>El Arca de Yahveh es una organización sin ánimo de lucro que promueve el bienestar social y el mejoramiento de las condiciones de vida de comunidades en situación de vulnerabilidad principalmente de niños, jóvenes, mujeres y adultos, a través de estrategias que apuntan a su desarrollo integral. Estrategias educativas, culturales, deportivas, artísticas, ocupacional, laboral, espiritual y de apropiación de saberes.</p>
+			        </div>
+			        <div class="bienvenida-imagen">
+			            <img src="images/logo.png" alt="Logo de la Fundación">
+			        </div>
+			    </div>
+			</div>
+
 		<section id="video-destacado" class="section promo-video-section fade-in-section">
 			<div class="promo-video-inner">
 				<h2>Bienestar y desarrollo integral para todos</h2>
@@ -62,22 +77,24 @@
 			</div>
 		</section>
 
-		<section id="quienes-somos" class="section fade-in-section">
-			<div class="bienvenida-box">
-			    <div class="bienvenida-content">
-			        <div class="bienvenida-texto">
-			            <h2>Quiénes Somos</h2>
-			            <p>El Arca de Yahveh es una organización sin ánimo de lucro que promueve el bienestar social y el mejoramiento de las condiciones de vida de comunidades en situación de vulnerabilidad principalmente de niños, jóvenes, mujeres y adultos, a través de estrategias que apuntan a su desarrollo integral. Estrategias educativas, culturales, deportivas, artísticas, ocupacional, laboral, espiritual y de apropiación de saberes.</p>
-			        </div>
-			        <div class="bienvenida-imagen">
-			            <img src="images/logo.png" alt="Logo de la Fundación">
-			        </div>
-			    </div>
-			</div>
-
 			<h2>Inicios de la Fundación</h2>
 			<div class="bienvenida-box">
 				<p>Fundada en el Distrito de Buenaventura en 2020, por un grupo de personas con un espíritu vehemente por ayudar a los más necesitados, afectadas por el conflicto armado, el desplazamiento forzado y la exclusión social.</p>
+			</div>
+			<div class="carrusel">
+				<button class="carrusel-btn prev" aria-label="Imagen anterior de inicios">&lt;</button>
+				<div class="carrusel-imagenes">
+					<img src="images/inicios_de_la_fundacion/inicios_1.jpeg" alt="Inicios de la Fundación 1">
+					<img src="images/inicios_de_la_fundacion/inicios_2.jpg" alt="Inicios de la Fundación 2">
+					<img src="images/inicios_de_la_fundacion/inicios_3.jpeg" alt="Inicios de la Fundación 3">
+					<img src="images/inicios_de_la_fundacion/inicios_4.jpg" alt="Inicios de la Fundación 4">
+					<img src="images/inicios_de_la_fundacion/inicios_5.jpeg" alt="Inicios de la Fundación 5">
+					<img src="images/inicios_de_la_fundacion/inicios_6.jpg" alt="Inicios de la Fundación 6">
+					<img src="images/inicios_de_la_fundacion/inicios_7.jpeg" alt="Inicios de la Fundación 7">
+					<img src="images/inicios_de_la_fundacion/inicios_8.jpg" alt="Inicios de la Fundación 8">
+					<img src="images/inicios_de_la_fundacion/inicios_9.jpg" alt="Inicios de la Fundación 9">
+				</div>
+				<button class="carrusel-btn next" aria-label="Siguiente imagen de inicios">&gt;</button>
 			</div>
 
 			<section id="valores" class="section fade-in-section">
@@ -125,6 +142,8 @@
 			</section>
 		</section>
 
+
+
 		<section id="actividades" class="section fade-in-section">
 			<h2>Qué Hacemos</h2>
 			<div class="cards">
@@ -170,19 +189,18 @@
 		<section id="galeria" class="section fade-in-section">
 		<h2>Galería</h2>
 			<div class="carrusel">
-				<button class="carrusel-btn prev"><</button>
+				<button class="carrusel-btn prev" aria-label="Imagen anterior de galería">&lt;</button>
 				<div class="carrusel-imagenes">
-					<img src="images/sl1.png" alt="Imagen1">
-					<img src="images/sl3.jpg" alt="Imagen3">
-					<img src="images/sl4.jpg" alt="Imagen4">
-					<img src="images/sl5.jpg" alt="Imagen5">
-					<img src="images/sl6.jpg" alt="Imagen6">
-					<img src="images/sl7.jpg" alt="Imagen7">
-					<img src="images/sl8.jpeg" alt="Imagen8">
-					<img src="images/sl9.jpeg" alt="Imagen9">
-					<!-- we can add more images here -->
+					<img src="images/galeria/sl1.png" alt="Imagen 1 de la galería">
+					<img src="images/galeria/sl3.jpg" alt="Imagen 3 de la galería">
+					<img src="images/galeria/sl4.jpg" alt="Imagen 4 de la galería">
+					<img src="images/galeria/sl5.jpg" alt="Imagen 5 de la galería">
+					<img src="images/galeria/sl6.jpg" alt="Imagen 6 de la galería">
+					<img src="images/galeria/sl7.jpg" alt="Imagen 7 de la galería">
+					<img src="images/galeria/sl8.jpeg" alt="Imagen 8 de la galería">
+					<img src="images/galeria/sl9.jpeg" alt="Imagen 9 de la galería">
 				</div>
-				<button class="carrusel-btn next">></button>
+				<button class="carrusel-btn next" aria-label="Siguiente imagen de galería">&gt;</button>
 			</div>
 		</section>
 	</main>
@@ -254,25 +272,31 @@
 	</script>
 
 	<script>
-		const imagenes = document.querySelector('.carrusel-imagenes');
-	    const btnPrev = document.querySelector('.carrusel-btn.prev');
-	    const btnNext = document.querySelector('.carrusel-btn.next');
-	    const totalImagenes = document.querySelectorAll('.carrusel-imagenes img').length;
-	    let index = 0;
+		document.querySelectorAll('.carrusel').forEach((carrusel) => {
+			const imagenes = carrusel.querySelector('.carrusel-imagenes');
+			const btnPrev = carrusel.querySelector('.carrusel-btn.prev');
+			const btnNext = carrusel.querySelector('.carrusel-btn.next');
+			const totalImagenes = carrusel.querySelectorAll('.carrusel-imagenes img').length;
+			let index = 0;
 
-	    btnNext.addEventListener('click', () => {
-	        index = (index + 1) % totalImagenes;
-	        actualizarCarrusel();
-	    });
+			if (!imagenes || !btnPrev || !btnNext || totalImagenes === 0) {
+				return;
+			}
 
-	    btnPrev.addEventListener('click', () => {
-	        index = (index - 1 + totalImagenes) % totalImagenes;
-	        actualizarCarrusel();
-	    });
+			const actualizarCarrusel = () => {
+				imagenes.style.transform = `translateX(${-index * 100}%)`;
+			};
 
-	    function actualizarCarrusel() {
-	        imagenes.style.transform = `translateX(${-index * 100}%)`;
-	    }
+			btnNext.addEventListener('click', () => {
+				index = (index + 1) % totalImagenes;
+				actualizarCarrusel();
+			});
+
+			btnPrev.addEventListener('click', () => {
+				index = (index - 1 + totalImagenes) % totalImagenes;
+				actualizarCarrusel();
+			});
+		});
 	</script>
 </body>
 </html>
